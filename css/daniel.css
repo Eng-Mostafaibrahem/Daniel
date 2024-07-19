@@ -1,0 +1,529 @@
+
+
+
+nav .nav-link{
+  position: relative;
+}
+nav .nav-link::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #f4f4f4;
+  transition: all .5s;
+}
+
+.navbar-dark .navbar-nav  .nav-link.active::before,
+.navbar-dark .navbar-nav  .nav-link:hover::before{
+  width: 80%;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: white;
+}
+
+
+
+.fit-content{
+  width: fit-content;
+}
+
+.section1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../imgs/imgs/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.section1 .text::after {
+  content: " |";
+  margin-left: 4px;
+  animation: typing 6s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: " L|";
+  }
+  2% {
+    content: " La|";
+  }
+  4% {
+    content: " Lar|";
+  }
+  6% {
+    content: " Larr|";
+  }
+  8% {
+    content: " Larry|";
+  }
+  10% {
+    content: " Larry D|";
+  }
+  12% {
+    content: " Larry Da|";
+  }
+  14% {
+    content: " Larry Dan|";
+  }
+  16% {
+    content: " Larry Dani|";
+  }
+  18% {
+    content: " Larry Danie|";
+  }
+  20% {
+    content: " Larry Daniel|";
+  }
+  22% {
+    content: " Larry Daniels|";
+  }
+  24% {
+    content: " Larry Daniels|";
+  }
+  26% {
+    content: " Larry Daniel|";
+  }
+  28% {
+    content: " Larry Danie|";
+  }
+  30% {
+    content: " Larry Dani|";
+  }
+  32% {
+    content: " Larry Dan|";
+  }
+  34% {
+    content: " Larry Da|";
+  }
+  36% {
+    content: " Larry D|";
+  }
+  38% {
+    content: " Larry|";
+  }
+  40% {
+    content: " Larr|";
+  }
+  42% {
+    content: " Lar|";
+  }
+  44% {
+    content: " La|";
+  }
+  46% {
+    content: " L|";
+  }
+  48% {
+    content: " |";
+  }
+  50% {
+    content: " D|";
+  }
+  52% {
+    content: " De|";
+  }
+  54% {
+    content: " Des|";
+  }
+  56% {
+    content: " Desi|";
+  }
+  58% {
+    content: " Desig|";
+  }
+  60% {
+    content: " Design|";
+  }
+  62% {
+    content: " Designe|";
+  }
+  64% {
+    content: " Designer|";
+  }
+  66% {
+    content: " Designe|";
+  }
+  68% {
+    content: " Design|";
+  }
+  70% {
+    content: " De|";
+  }
+  72% {
+    content: " D|";
+  }
+  74% {
+    content: " De|";
+  }
+  76% {
+    content: " Dev|";
+  }
+  78% {
+    content: " Deve|";
+  }
+  80% {
+    content: " Devel|";
+  }
+  82% {
+    content: " Develo|";
+  }
+  84% {
+    content: " Develop|";
+  }
+  86% {
+    content: " Develope|";
+  }
+  88% {
+    content: " Developer|";
+  }
+  90% {
+    content: " Develope|";
+  }
+  92% {
+    content: " Develop|";
+  }
+  94% {
+    content: " Develo|";
+  }
+  95% {
+    content: " Devel|";
+  }
+  96% {
+    content: " Deve|";
+  }
+  97% {
+    content: " Dev|";
+  }
+  98% {
+    content: " De|";
+  }
+  99% {
+    content: " D|";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+.skills {
+  margin-top: 30px;
+}
+.item {
+  margin-bottom: 30px;
+}
+
+.about .hero {
+  position: relative;
+}
+
+.section2 .about .hero-img::before {
+  content: "";
+  width: 62%;
+  height: 90%;
+  position: absolute;
+  left: -5%;
+  top: 15%;
+  background-image: url(../imgs/imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.skills-progress {
+  position: relative;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  background: #f7f7f7;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.skills .skills-progress .web {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
+.skills .skills-progress .dev {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
+.skills .skills-progress .brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  transition: all 1s;
+}
+.skills-progress .web:after {
+  content: "95%";
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  font-size: 15px;
+  color: #fff;
+}
+.skills-progress .brand:after {
+  content: "80%";
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  font-size: 15px;
+  color: #fff;
+}
+.skills-progress .dev:after {
+  content: "90%";
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.skills h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+/* services */
+
+.title h2::after {
+  content: "";
+  width: 20%;
+  height: 20%;
+  left: 40%;
+  top: 45%;
+  position: absolute;
+  background-image: url("../imgs/imgs/dots.png");
+  background-repeat: repeat;
+  z-index: -1;
+}
+#services .services-card .card i{
+  background-color: #1c1c1c;
+}
+
+
+
+.section-head h3{
+  font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+.section-head h3::after{
+  content: "";
+  position: absolute;
+  background-image: url(/imgs/dots.png);
+  width: 100%;
+  height: 30px;
+  background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.icon-s{
+  width: 3rem;
+  height: 3rem; 
+  background: #f4f4f4;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all .5s;
+}
+
+.item-s{
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.182);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  
+}
+.item-s:hover .icon-s{
+  background-color: #1c1c1c;
+}
+
+.item-s:hover .icon-s i{
+  color: white;
+}
+
+
+
+/* end services */
+
+/* PORTOFOLIO */
+
+.nav-pills .nav-link{
+color: black;
+position: relative;
+}
+.nav-pills .nav-link::after {
+content: "";
+width: 0%;
+height: 2px;
+position: absolute;
+left:15px;
+bottom: 0;
+background-color: black;
+transition: 1s;
+}
+
+.nav-pills .nav-link:hover::after{
+  width:60%
+}
+
+.nav-pills .nav-link.active{
+background-color:white;
+color: black;
+}
+.nav-pills .nav-link.active::after{
+  width: 60%;
+}
+
+#works .item{
+  position: relative;
+  overflow: hidden;
+
+}
+
+#works .item .layer{
+  background-color:rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 2%;
+  bottom: 2%;
+  right: 7%;
+  left: 7%;
+  transition: 1s;
+  opacity: 0;
+
+}
+#works .item:hover  .layer{
+  opacity: 1;
+}
+
+#works .item a{
+  text-decoration: none;
+  color: #f7f7f7;
+}
+#works .item .layer .card-icon{
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  right: 0;
+  left: 40%;  
+  transition:0.5s;
+  opacity: 0;
+
+}
+
+#works .item:hover .layer .card-icon{
+ opacity: 1;
+
+}
+
+
+
+
+/* tesmonial */
+.section5  {
+  background-color: #f7f7f7;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: lightsteelblue;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contact .icon:hover{
+  background-color: black;
+}
+.contact .icon:hover i{
+  color: #f4f4f4;
+}
+
+/* section6 our team */
+
+ .img-area{
+position: relative;
+
+}
+.img-area .layer{
+  background-color:rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: 2s;
+  opacity:0
+}
+.img-area:hover .layer{
+  opacity: 1;
+  transform:rotateY(360deg);
+  transition: 1s;
+}
+
+.our-team .card{
+overflow: hidden;
+}
+.img-area:hover{
+  transform: scale(1.1);
+  transition: 2s;
+}
+
+.btn-dark:hover{
+  background-color: white;
+  color: black;
+}
+
+.btn-white:hover{
+  background-color: black;
+  color: white;
+
+}
+
+
+#contact form input{
+  background-color: #f4f4f4;
+}
+
+
+#contact form textarea{
+  background-color: #f4f4f4;
+}
